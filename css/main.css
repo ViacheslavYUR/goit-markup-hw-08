@@ -109,12 +109,18 @@ button {
   top: 0;
   left: 0;
   z-index: 110;
+  background-color: var(--primery-bgc);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
   transition: opacity var(--transform-durac) var(--transition-func), visibility var(--transform-durac) var(--transition-func);
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-menu_open {
+    display: none;
+  }
+}
 .is-open {
   opacity: 1;
   visibility: visible;
@@ -126,7 +132,6 @@ button {
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 25px;
-  background-color: teal;
 }
 
 .mobile-menu_close {
@@ -140,9 +145,14 @@ button {
   padding: 0;
 }
 
+.mobile-menu__container .navigation,
+.mobile-menu__container .header-contact {
+  display: block;
+}
+
 @media screen and (max-width: 767px) {
   .navigation,
-.header-contacts {
+.header-contact {
     display: none;
   }
 }
@@ -159,15 +169,17 @@ button {
   background-color: transparent;
 }
 
-.header-contacts {
+.header-contact {
   margin-left: auto;
 }
 
-.contact:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 1200px) {
+  .contact__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
-
-.contact__item {
+.contact__mail,
+.contact__phone {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -178,15 +190,26 @@ button {
   transition-duration: var(--transform-durac);
   transition-timing-function: var(--transition-func);
 }
-.contact__item:hover, .contact__item:focus {
+.contact__mail:hover, .contact__mail:focus,
+.contact__phone:hover,
+.contact__phone:focus {
   fill: currentColor;
   color: var(--accent-color);
+}
+
+.contact__mail {
+  margin-bottom: 10px;
+  padding-top: 21px;
+}
+
+.contact__phone {
+  padding-bottom: 21px;
 }
 
 .contact__icon {
   fill: currentColor;
 }
-.contact__item .contact__icon {
+.contact__mail .contact__icon, .contact__phone .contact__icon {
   margin-right: 10px;
 }
 
@@ -202,8 +225,7 @@ button {
   margin-right: 50px;
 }
 
-.nav-menu__link,
-.contact__item {
+.nav-menu__link {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -257,6 +279,7 @@ button {
   .logo_position {
     padding-top: 26px;
     padding-bottom: 26px;
+    margin-right: 87px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -288,6 +311,18 @@ button {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/hero/hero-mobile.jpg");
 }
 
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/hero/hero-tablet.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/hero/hero-desctop.jpg");
+  }
+}
 .hero__title {
   font-weight: 900;
   font-size: 44px;

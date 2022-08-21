@@ -5,12 +5,17 @@
   top: 0;
   left: 0;
   z-index: 110;
-
+  background-color: var(--primery-bgc);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
   transition: opacity var(--transform-durac) var(--transition-func),
     visibility var(--transform-durac) var(--transition-func);
+}
+@media screen and(min-width:768px) {
+  .mobile-menu_open {
+    display: none;
+  }
 }
 .is-open {
   opacity: 1;
@@ -22,8 +27,6 @@
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 25px;
-
-  background-color: teal;
 }
 .mobile-menu_close {
   position: absolute;
@@ -34,4 +37,8 @@
   background-color: transparent;
   border: none;
   padding: 0;
+}
+.mobile-menu__container .navigation,
+.mobile-menu__container .header-contact {
+  display: block;
 }
