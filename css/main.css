@@ -83,13 +83,9 @@ button {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-}
-@media screen and (max-width: 767px) {
-  .container {
-    width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  width: 480px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -149,11 +145,7 @@ button {
 .page-header__container {
   display: flex;
   align-items: center;
-}
-@media screen and (max-width: 767px) {
-  .page-header__container {
-    justify-content: space-between;
-  }
+  justify-content: space-between;
 }
 
 .mobile-menu_open {
