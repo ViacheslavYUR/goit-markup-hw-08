@@ -63,29 +63,35 @@ button {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.section__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: var(--secondary-text-color);
-}
-
-.section_theme_dark {
+.section_theme-dark {
   background-color: #f5f4fa;
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  background: tomato;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .page-header {
@@ -98,6 +104,39 @@ button {
   align-items: center;
 }
 
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contact__item {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primery-text-color);
+  align-items: center;
+  transition-property: color, fill;
+  transition-duration: var(--transform-durac);
+  transition-timing-function: var(--transition-func);
+}
+.contact__item:hover, .contact__item:focus {
+  fill: currentColor;
+  color: var(--accent-color);
+}
+
+.contact__icon {
+  fill: currentColor;
+}
+.contact__item .contact__icon {
+  margin-right: 10px;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -108,16 +147,28 @@ button {
 }
 
 .logo_position {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .logo_position {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo_position {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+  }
 }
 
-.logo_theme_light {
+.logo_theme-light {
   color: #000000;
 }
 
-.logo_theme_dark {
+.logo_theme-dark {
   color: var(--text-color-dark-terms);
 }
 
@@ -166,39 +217,6 @@ button {
   display: block;
   background-color: var(--accent-color);
   border-radius: 2px;
-}
-
-.header-contacts {
-  display: flex;
-  margin-left: auto;
-}
-
-.contact:not(:last-child) {
-  margin-right: 50px;
-}
-
-.contact__item {
-  display: flex;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--primery-text-color);
-  align-items: center;
-  transition-property: color, fill;
-  transition-duration: var(--transform-durac);
-  transition-timing-function: var(--transition-func);
-}
-.contact__item:hover, .contact__item:focus {
-  fill: currentColor;
-  color: var(--accent-color);
-}
-
-.contact__icon {
-  fill: currentColor;
-}
-.contact__item .contact__icon {
-  margin-right: 10px;
 }
 
 .hero {
