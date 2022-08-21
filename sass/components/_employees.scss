@@ -1,0 +1,62 @@
+.employees-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.employee {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
+}
+.employee__content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.employee__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--secondary-text-color);
+  margin-bottom: 10px;
+}
+.employee__profesion {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.employees-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.employee-social__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  fill: var(--icon-color);
+  transition-property: fill, background-color, bordrer-radius;
+  transition-duration: var(--transform-durac);
+  transition-timing-function: var(--transition-func);
+  &:hover,
+  &:focus {
+    fill: var(--text-color-dark-terms);
+    background-color: var(--accent-color);
+    border-radius: 50%;
+  }
+}
+.employee-social__icon {
+  display: flex;
+  width: 20px;
+  height: 20px;
+}

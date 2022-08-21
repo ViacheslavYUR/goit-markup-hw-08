@@ -1,0 +1,29 @@
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer__block {
+  display: flex;
+  align-items: baseline;
+}
+.footer__block_first {
+  margin-right: 70px;
+}
+.footer__block_third {
+  margin-left: auto;
+}
+.footer__logo {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 0;
+}
+.footer__subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-color-dark-terms);
+  margin-bottom: 20px;
+}

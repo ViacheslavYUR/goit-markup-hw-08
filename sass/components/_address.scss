@@ -1,0 +1,18 @@
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-top: 20px;
+}
+.address__item + .address__item {
+  margin-top: 9px;
+}
+
+.address__map {
+  color: var(--text-color-dark-terms);
+}
+
+.address__contact {
+  color: rgba(255, 255, 255, 0.6);
+}

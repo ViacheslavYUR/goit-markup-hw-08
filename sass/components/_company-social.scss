@@ -1,0 +1,28 @@
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: var(--transform-durac);
+  transition-timing-function: var(--transition-func);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.social-footer-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: var(--text-color-dark-terms);
+}
