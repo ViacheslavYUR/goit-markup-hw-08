@@ -67,6 +67,15 @@ button {
   padding-bottom: 60px;
 }
 
+.section__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+
 .section_theme-dark {
   background-color: #f5f4fa;
 }
@@ -137,10 +146,14 @@ button {
     display: none;
   }
 }
-.page-header_line {
+.page-header__container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .page-header__container {
+    justify-content: space-between;
+  }
 }
 
 .mobile-menu_open {
@@ -150,17 +163,6 @@ button {
   background-color: transparent;
 }
 
-.page-header {
-  background-color: #ffffff;
-  border-bottom: 1px solid #ececec;
-}
-
-@media screen and (min-width: 768px) {
-  .page-header_line {
-    display: flex;
-    align-items: center;
-  }
-}
 .header-contacts {
   margin-left: auto;
 }
