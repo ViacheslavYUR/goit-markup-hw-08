@@ -1,11 +1,10 @@
 .mobile-menu {
-  background-color: teal;
   position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 90;
+  z-index: 110;
 
   opacity: 0;
   visibility: hidden;
@@ -23,6 +22,8 @@
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 25px;
+
+  background-color: teal;
 }
 .mobile-menu_close {
   position: absolute;
