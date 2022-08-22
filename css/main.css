@@ -500,40 +500,44 @@ button {
 }
 
 .what-engage {
-  padding-top: 0;
+  display: none;
 }
 
-.engage {
-  position: relative;
+@media screen and (min-width: 1200px) {
+  .what-engage {
+    display: block;
+    padding-top: 0;
+  }
+  .engage {
+    position: relative;
+  }
+  .engage:not(:last-child) {
+    margin-right: 30px;
+  }
+  .engage-list {
+    display: flex;
+  }
+  .engage__inform {
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-color-dark-terms);
+    position: absolute;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+  .container .section__title {
+    margin-bottom: 50px;
+  }
 }
-.engage:not(:last-child) {
-  margin-right: 30px;
-}
-.engage-list {
-  display: flex;
-}
-.engage__inform {
-  align-items: center;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--text-color-dark-terms);
-  position: absolute;
-  display: flex;
-  height: 70px;
-  justify-content: center;
-  width: 100%;
-  bottom: 0;
-  z-index: 1;
-  background-color: rgba(47, 48, 58, 0.8);
-}
-
-.container .section__title {
-  margin-bottom: 50px;
-}
-
 .employees-list {
   display: flex;
   flex-wrap: wrap;
