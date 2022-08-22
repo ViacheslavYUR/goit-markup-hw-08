@@ -435,6 +435,11 @@ button {
     flex-wrap: nowrap;
   }
 }
+@media screen and (max-width: 767px) {
+  .advantage__item {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .advantage__item {
     width: 354px;
@@ -465,6 +470,11 @@ button {
   text-transform: uppercase;
   color: var(--secondary-text-color);
   margin-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+  .advantage__title {
+    text-align: center;
+  }
 }
 
 .advantage__block {
