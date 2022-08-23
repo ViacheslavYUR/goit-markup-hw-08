@@ -499,25 +499,25 @@ button {
   letter-spacing: 0.03em;
 }
 
-.what-engage {
+.making_none {
   display: none;
 }
 
 @media screen and (min-width: 1200px) {
-  .what-engage {
+  .making_none {
     display: block;
     padding-top: 0;
   }
-  .engage {
-    position: relative;
-  }
-  .engage:not(:last-child) {
-    margin-right: 30px;
-  }
-  .engage-list {
+  .making {
     display: flex;
   }
-  .engage__inform {
+  .making__item {
+    position: relative;
+  }
+  .making__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .making__inform {
     align-items: center;
     font-weight: 700;
     font-size: 14px;
@@ -538,13 +538,15 @@ button {
     margin-bottom: 50px;
   }
 }
-.employees-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+@media screen and (min-width: 768px) {
+  .employee {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
-.employee {
+.employee__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;

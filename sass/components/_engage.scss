@@ -1,20 +1,19 @@
-.what-engage {
+.making_none {
   display: none;
 }
 
 @media screen and(min-width:1200px) {
-  .what-engage {
+  .making_none {
     display: block;
     padding-top: 0;
   }
-
-  .engage {
-    position: relative;
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
-    &-list {
-      display: flex;
+  .making {
+    display: flex;
+    &__item {
+      position: relative;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
     }
     &__inform {
       align-items: center;
