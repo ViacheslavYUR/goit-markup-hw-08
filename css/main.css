@@ -695,10 +695,25 @@ button {
 
 .footer__block_first {
   text-align: center;
+  margin-bottom: 60px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
+  .footer__block_first {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .footer__block_first {
     margin-right: 70px;
+  }
+}
+
+.footer__block_second {
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer__block_second {
+    margin-bottom: 0;
   }
 }
 
@@ -734,11 +749,12 @@ button {
 
 .subscribe-write {
   position: relative;
-  max-width: 450px;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
   .subscribe-write {
     width: 450px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -759,7 +775,6 @@ button {
   display: block;
   width: 100%;
   height: 50px;
-  border: none;
   color: var(--text-color-dark-terms);
   padding-left: 70px;
   padding-right: 12px;
@@ -785,11 +800,19 @@ button {
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 @media screen and (max-width: 767px) {
   .subscribe-btn {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-btn {
+    margin-top: 0;
   }
 }
 
@@ -809,7 +832,12 @@ button {
 }
 
 .address__item + .address__item {
-  margin-top: 9px;
+  margin-top: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .address__item + .address__item {
+    margin-top: 9px;
+  }
 }
 
 .address__map {

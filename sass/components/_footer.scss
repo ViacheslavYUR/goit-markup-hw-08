@@ -16,8 +16,18 @@
 
 .footer__block_first {
   text-align: center;
-  @media screen and(min-width:1200px) {
-    margin-right: 70px;
+  margin-bottom: 60px;
+  @media screen and(min-width:768px) {
+    margin-bottom: 0;
+    @media screen and(min-width:1200px) {
+      margin-right: 70px;
+    }
+  }
+}
+.footer__block_second {
+  margin-bottom: 60px;
+  @media screen and(min-width:768px) {
+    margin-bottom: 0;
   }
 }
 .footer__block_third {
@@ -50,11 +60,11 @@
 
 .subscribe-write {
   position: relative;
-  max-width: 450px;
+  margin-bottom: 20px;
   @media screen and(min-width:768px) {
     width: 450px;
+    margin-bottom: 0;
   }
-
   @media screen and(min-width:1200px) {
     width: 358px;
   }
@@ -71,7 +81,6 @@
   display: block;
   width: 100%;
   height: 50px;
-  border: none;
   color: var(--text-color-dark-terms);
   padding-left: 70px;
   padding-right: 12px;
@@ -96,9 +105,16 @@
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   @media screen and (max-width: 767px) {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @media screen and(min-width:1200px) {
+    margin-top: 0;
   }
 }
 .subsribe-btn-icon {
