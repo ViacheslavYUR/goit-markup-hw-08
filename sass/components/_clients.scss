@@ -1,13 +1,19 @@
-.clients-list {
+.client {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-
   gap: 30px;
 }
-.client {
-  width: 170px;
+.client__item {
+  width: 210px;
   height: 92px;
+  @media screen and(min-width:768px) {
+    width: 226px;
+  }
+  @media screen and(min-width:1200px) {
+    width: 170px;
+  }
 }
 .client__link {
   display: flex;
