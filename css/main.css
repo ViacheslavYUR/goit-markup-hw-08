@@ -721,7 +721,7 @@ button {
     margin-top: 60px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer__block_second {
     margin-top: 0;
   }
