@@ -44,8 +44,23 @@
   background-color: transparent;
   border: none;
   padding: 0;
+  transition: fill var(--transform-durac) var(--transition-func);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 .mobile-menu__container .navigation,
 .mobile-menu__container .header-contact {
   display: block;
+}
+
+@media screen and(max-width:767px) {
+  .nav-menu__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: calc(47px / 40px);
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
 }

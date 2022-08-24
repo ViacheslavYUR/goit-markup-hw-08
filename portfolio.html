@@ -116,176 +116,208 @@
           <h1 class="hidden-title">----Hidden-----Наше Портфолио</h1>
           <!--список фильтров-->
           <ul class="menu-filter list">
-            <li><button type="button" class="btn-filter">Все</button></li>
-            <li><button type="button" class="btn-filter">Веб-сайти</button></li>
-            <li><button type="button" class="btn-filter">Додатки</button></li>
-            <li><button type="button" class="btn-filter">Дизайн</button></li>
-            <li><button type="button" class="btn-filter">Маркетинг</button></li>
+            <li class="menu-filter__item"><button type="button" class="btn-filter">Все</button></li>
+            <li class="menu-filter__item"><button type="button" class="btn-filter">Веб-сайти</button></li>
+            <li class="menu-filter__item"><button type="button" class="btn-filter">Додатки</button></li>
+            <li class="menu-filter__item"><button type="button" class="btn-filter">Дизайн</button></li>
+            <li class="menu-filter__item"><button type="button" class="btn-filter">Маркетинг</button></li>
           </ul>
           <!-- перечень работ портфолио -->
           <ul class="list our-works">
-            <li class="our-works-item">
-              <a href="" class="link our-works-link">
-                <div class="about-background">
-                  <img
-                  class="our-work-img"
-                  src="./image/portgolio/tehnocrack.jpg"
+            <li class="our-works__item">
+              <a href="" class="link our-works__link">
+                <div class="our-works__background">
+                  <picture class="our-works__img">
+                    <source media="(max-width:767px)" srcset="./image/portfolio/optimization-mobile/mobile-tehnocrack.jpg 1x, ./image/portfolio/optimization-mobile/mobile-tehnocrack@2x.jpg 2x, ./image/portfolio/optimization-mobile/mobile-tehnocrack@3x.jpg 3x " />
+                    <source media="(min-width:1200px)" srcset="./image/portfolio/optimization-desctop/desctop-tehnocrack.jpg 1x, ./image/portfolio/optimization-desctop/desctop-tehnocrack@2x.jpg 2x, ./image/portfolio/optimization-desctop/desctop-tehnocrack@3x.jpg 3x " />
+                    <source media="(min-width:768px)" srcset="./image/portfolio/optimization-tablet/tablet-tehnocrack.jpg 1x, ./image/portfolio/optimization-tablet/tablet-tehnocrack@2x.jpg 2x, ./image/portfolio/optimization-tablet/tablet-tehnocrack@3x.jpg 3x " />
+                    <img
+                  src="./image/portfolio/optimization-mobile/mobile-tehnocrack.jpg"
                   alt="Технокряк"
-                  width="370"
+
                 />
-                <p class="our-work-about">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу</p>
+                  </picture>
+                 <p class="our-works__about">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу</p>
               </div>
-                <div class="portfolio-border">
-                  <h2 class="portfolio-name">Технокряк</h2>
-                  <p class="porfolio-item">Веб-сайт</p>
+                <div class="our-works__border">
+                  <h2 class="our-works__project">Технокряк</h2>
+                  <p class="our-works__make">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="our-works-item">
-              <a href="" class="link our-works-link">
-                <div class="about-background"> 
-                  <img
-                  class="our-work-img"
-                  src="./image/portgolio/post.jpg"
+            <li class="our-works__item">
+              <a href="" class="link our-works__link">
+                <div class="our-works__background"> 
+                  <picture class="our-works__img">
+                    <source media="(max-width:767px)" srcset="./image/portfolio/optimization-mobile/mobile-post-basketbal.jpg 1x, ./image/portfolio/optimization-mobile/mobile-post-basketbal@2x.jpg 2x, ./image/portfolio/optimization-mobile/mobile-post-basketbal@3x.jpg 3x " />
+                    <source media="(min-width:1200px)" srcset="./image/portfolio/optimization-desctop/desctop-post-basketbal.jpg 1x, ./image/portfolio/optimization-desctop/desctop-post-basketbal@2x.jpg 2x, ./image/portfolio/optimization-desctop/desctop-post-basketbal@3x.jpg 3x " />
+                    <source media="(min-width:768px)" srcset="./image/portfolio/optimization-tablet/tablet-post-basketbal.jpg 1x, ./image/portfolio/optimization-tablet/tablet-post-basketbal@2x.jpg 2x, ./image/portfolio/optimization-tablet/tablet-post-basketbal@3x.jpg 3x " />
+                    <img
+                    src="./image/portfolio/optimization-mobile/mobile-post-basketbal.jpg"
                   alt="два баскетболиста"
-                  width="370"
+
                 />
-                 <p class="our-work-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reiciendis saepe esse, ea repudiandae architecto.
+                  </picture>                  
+                 <p class="our-works__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reiciendis saepe esse, ea repudiandae architecto.
                  </p>
               </div>
-                <div class="portfolio-border">
-                  <h2 class="portfolio-name">
+                <div class="our-works__border">
+                  <h2 class="our-works__project">
                     Постер <span lang="en">New Orlean vs Golden Star</span>
                   </h2>
-                  <p class="porfolio-item">Дизайн</p>
+                  <p class="our-works__make">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="our-works-item">
-              <a href="" class="link our-works-link">
-                <div class="about-background"> 
-                  <img
-                  class="our-work-img"
-                  src="./image/portgolio/restaurant.jpg"
+            <li class="our-works__item">
+              <a href="" class="link our-works__link">
+                <div class="our-works__background"> 
+                  <picture class="our-works__img">
+                    <source media="(max-width:767px)" srcset="./image/portfolio/optimization-mobile/mobile-restaurant.jpg 1x, ./image/portfolio/optimization-mobile/mobile-restaurant@2x.jpg 2x, ./image/portfolio/optimization-mobile/mobile-restaurant@3x.jpg 3x " />
+                    <source media="(min-width:1200px)" srcset="./image/portfolio/optimization-desctop/desctop-restaurant.jpg 1x, ./image/portfolio/optimization-desctop/desctop-restaurant@2x.jpg 2x, ./image/portfolio/optimization-desctop/desctop-restaurant@3x.jpg 3x " />
+                    <source media="(min-width:768px)" srcset="./image/portfolio/optimization-tablet/tablet-restaurant.jpg 1x, ./image/portfolio/optimization-tablet/tablet-restaurant@2x.jpg 2x, ./image/portfolio/optimization-tablet/tablet-restaurant@3x.jpg 3x " />
+                    <img
+                  src="./image/portfolio/optimization-mobile/mobile-restaurant.jpg"
                   alt="логотип ресторана"
-                  width="370"
+
                 />
-                  <p class="our-work-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reiciendis saepe esse, ea repudiandae architecto.
+                  </picture>                  
+                  <p class="our-works__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reiciendis saepe esse, ea repudiandae architecto.
                   </p>
               </div>
-                <div class="portfolio-border">
-                  <h2 class="portfolio-name">
+                <div class="our-works__border">
+                  <h2 class="our-works__project">
                     Ресторан <span lang="en">Seafood</span>
                   </h2>
-                  <p class="porfolio-item">Додаток</p>
+                  <p class="our-works__make">Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="our-works-item">
-              <a href="" class="link our-works-link">
-                <div class="about-background"> 
-                  <img
-                  class="our-work-img"
-                  src="./image/portgolio/project-prime.jpg"
-                  alt="навушники"
-                  width="370"
+            <li class="our-works__item">
+              <a href="" class="link our-works__link">
+                <div class="our-works__background"> 
+                  <picture class="our-works__img">
+                    <source media="(max-width:767px)" srcset="./image/portfolio/optimization-mobile/mobile-prime.jpg 1x, ./image/portfolio/optimization-mobile/mobile-prime@2x.jpg 2x, ./image/portfolio/optimization-mobile/mobile-prime@3x.jpg 3x " />
+                    <source media="(min-width:1200px)" srcset="./image/portfolio/optimization-desctop/desctop-prime.jpg 1x, ./image/portfolio/optimization-desctop/desctop-prime@2x.jpg 2x, ./image/portfolio/optimization-desctop/desctop-prime@3x.jpg 3x " />
+                    <source media="(min-width:768px)" srcset="./image/portfolio/optimization-tablet/tablet-prime.jpg 1x, ./image/portfolio/optimization-tablet/tablet-prime@2x.jpg 2x, ./image/portfolio/optimization-tablet/tablet-prime@3x.jpg 3x " />
+                    <img
+                  src="./image/portfolio/optimization-mobile/mobile-prime.jpg"
+                   alt="навушники"
+
                 />
-                 <p class="our-work-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reiciendis saepe esse, ea repudiandae architecto. Totam, possimus nihil et in pariatur praesentium rerum, quam cum, cupiditate modi voluptatibus aperiam a
+                  </picture>
+                 <p class="our-works__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reiciendis saepe esse, ea repudiandae architecto. Totam, possimus nihil et in pariatur praesentium rerum, quam cum, cupiditate modi voluptatibus aperiam a
                  </p>
               </div>
-                <div class="portfolio-border">
-                  <h2 class="portfolio-name">
+                <div class="our-works__border">
+                  <h2 class="our-works__project">
                     Проєкт <span lang="en">Prime</span>
                   </h2>
-                  <p class="porfolio-item">Маркетинг</p>
+                  <p class="our-works__make">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="our-works-item"> <a href="" class="link our-works-link">
-              <div class="about-background"> 
-                <img
-                class="our-work-img"
-                src="./image/portgolio/project-boxes.jpg"
-                alt="две коробки"
-                width="370"
-              />
-              <p class="our-work-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reiciendis saepe esse, ea repudiandae architecto. Totam, possimus nihil et in pariatur praesentium rerum, quam cum, cupiditate modi voluptatibus aperiam a
+            <li class="our-works__item"> <a href="" class="link our-works__link">
+              <div class="our-works__background"> 
+                <picture class="our-works__img">
+                    <source media="(max-width:767px)" srcset="./image/portfolio/optimization-mobile/mobile-boxes.jpg 1x, ./image/portfolio/optimization-mobile/mobile-boxes@2x.jpg 2x, ./image/portfolio/optimization-mobile/mobile-boxes@3x.jpg 3x " />
+                    <source media="(min-width:1200px)" srcset="./image/portfolio/optimization-desctop/desctop-boxes.jpg 1x, ./image/portfolio/optimization-desctop/desctop-boxes@2x.jpg 2x, ./image/portfolio/optimization-desctop/desctop-boxes@3x.jpg 3x " />
+                    <source media="(min-width:768px)" srcset="./image/portfolio/optimization-tablet/tablet-boxes.jpg 1x, ./image/portfolio/optimization-tablet/tablet-boxes@2x.jpg 2x, ./image/portfolio/optimization-tablet/tablet-boxes@3x.jpg 3x " />
+                    <img
+                  src="./image/portfolio/optimization-mobile/mobile-boxes.jpg"
+                  alt="две коробки"
+
+                />
+                  </picture>
+               <p class="our-works__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reiciendis saepe esse, ea repudiandae architecto. Totam, possimus nihil et in pariatur praesentium rerum, quam cum, cupiditate modi voluptatibus aperiam a
               </p>
               </div>
-              <div class="portfolio-border">
-                <h2 class="portfolio-name">
+              <div class="our-works__border">
+                <h2 class="our-works__project">
                   Проєкт <span lang="en">Boxes</span>
                 </h2>
-                <p class="porfolio-item">Додаток</p>
+                <p class="our-works__make">Додаток</p>
               </div> </a>
             </li>
-            <li class="our-works-item"> <a href="" class="link our-works-link">
-              <div class="about-background"> 
-                <img
-                class="our-work-img"
-                src="./image/portgolio/inspirarion.jpg"
-                alt="монитор"
-                width="370"
-              />
-              <p class="our-work-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reiciendis saepe esse, ea repudiandae architecto. Totam, possimus nihil et in pariatur praesentium rerum, quam cum, cupiditate modi voluptatibus aperiam a
+            <li class="our-works__item"> <a href="" class="link our-works__link">
+              <div class="our-works__background"> 
+                <picture class="our-works__img">
+                    <source media="(max-width:767px)" srcset="./image/portfolio/optimization-mobile/mobile-inspirarion.jpg 1x, ./image/portfolio/optimization-mobile/mobile-inspirarion@2x.jpg 2x, ./image/portfolio/optimization-mobile/mobile-inspirarion@3x.jpg 3x " />
+                    <source media="(min-width:1200px)" srcset="./image/portfolio/optimization-desctop/desctop-inspirarion.jpg 1x, ./image/portfolio/optimization-desctop/desctop-inspirarion@2x.jpg 2x, ./image/portfolio/optimization-desctop/desctop-inspirarion@3x.jpg 3x " />
+                    <source media="(min-width:768px)" srcset="./image/portfolio/optimization-tablet/tablet-inspirarion.jpg 1x, ./image/portfolio/optimization-tablet/tablet-inspirarion@2x.jpg 2x, ./image/portfolio/optimization-tablet/tablet-inspirarion@3x.jpg 3x " />
+                    <img
+                  src="./image/portfolio/optimization-mobile/mobile-inspirarion.jpg"
+                  alt="монитор"
+                />
+                  </picture>
+              <p class="our-works__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reiciendis saepe esse, ea repudiandae architecto. Totam, possimus nihil et in pariatur praesentium rerum, quam cum, cupiditate modi voluptatibus aperiam a
               </p>
               </div>
-              <div class="portfolio-border">
-                <h2 lang="en" class="portfolio-name">
+              <div class="our-works__border">
+                <h2 lang="en" class="our-works__project">
                   Inspiration has no Borders
                 </h2>
-                <p class="porfolio-item">Веб-сайт</p>
+                <p class="our-works__make">Веб-сайт</p>
               </div> </a>
             </li>
-            <li class="our-works-item"> <a href="" class="link our-works-link">
-              <div class="about-background">
-                <img
-                class="our-work-img"
-                src="./image/portgolio/limited-edition.jpg"
-                alt="розкрытый журнал"
-                width="370"
-              />
-              <p class="our-work-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reiciendis saepe esse, ea repudiandae architecto. Totam, possimus nihil et in pariatur praesentium rerum, quam cum, cupiditate modi voluptatibus aperiam a
+            <li class="our-works__item"> <a href="" class="link our-works__link">
+              <div class="our-works__background">
+                <picture class="our-works__img">
+                    <source media="(max-width:767px)" srcset="./image/portfolio/optimization-mobile/mobile-limited.jpg 1x, ./image/portfolio/optimization-mobile/mobile-limited@2x.jpg 2x, ./image/portfolio/optimization-mobile/mobile-limited@3x.jpg 3x " />
+                    <source media="(min-width:1200px)" srcset="./image/portfolio/optimization-desctop/desctop-limited.jpg 1x, ./image/portfolio/optimization-desctop/desctop-limited@2x.jpg 2x, ./image/portfolio/optimization-desctop/desctop-limited@3x.jpg 3x " />
+                    <source media="(min-width:768px)" srcset="./image/portfolio/optimization-tablet/tablet-limited.jpg 1x, ./image/portfolio/optimization-tablet/tablet-limited@2x.jpg 2x, ./image/portfolio/optimization-tablet/tablet-limited@3x.jpg 3x " />
+                    <img
+                  src="./image/portfolio/optimization-mobile/mobile-limited.jpg"
+                 alt="розкрытый журнал"
+                />
+                  </picture>
+              <p class="our-works__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reiciendis saepe esse, ea repudiandae architecto. Totam, possimus nihil et in pariatur praesentium rerum, quam cum, cupiditate modi voluptatibus aperiam a
               </p>
               </div>
-              <div class="portfolio-border">
-                <h2 class="portfolio-name">
+              <div class="our-works__border">
+                <h2 class="our-works__project">
                   Видання <span lang="en">Limited Edition</span>
                 </h2>
-                <p class="porfolio-item">Дизайн</p>
+                <p class="our-works__make">Дизайн</p>
               </div> </a>
             </li>
-            <li class="our-works-item"> <a href="" class="link our-works-link">
-              <div class="about-background">
-              <img
-                class="our-work-img"
-                src="./image/portgolio/project-lab.jpg"
-                alt="бирка с надписью"
-                width="370"
-              />
-              <p class="our-work-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reiciendis saepe esse, ea repudiandae architecto. Totam, possimus nihil et in pariatur praesentium rerum, quam cum, cupiditate modi voluptatibus aperiam a
+            <li class="our-works__item"> <a href="" class="link our-works__link">
+              <div class="our-works__background">
+                <picture class="our-works__img">
+                    <source media="(max-width:767px)" srcset="./image/portfolio/optimization-mobile/mobile-label.jpg 1x, ./image/portfolio/optimization-mobile/mobile-label@2x.jpg 2x, ./image/portfolio/optimization-mobile/mobile-label@3x.jpg 3x " />
+                    <source media="(min-width:1200px)" srcset="./image/portfolio/optimization-desctop/desctop-label.jpg 1x, ./image/portfolio/optimization-desctop/desctop-label@2x.jpg 2x, ./image/portfolio/optimization-desctop/desctop-label@3x.jpg 3x " />
+                    <source media="(min-width:768px)" srcset="./image/portfolio/optimization-tablet/tablet-label.jpg 1x, ./image/portfolio/optimization-tablet/tablet-label@2x.jpg 2x, ./image/portfolio/optimization-tablet/tablet-label@3x.jpg 3x " />
+                    <img
+                  src="./image/portfolio/optimization-mobile/mobile-label.jpg"
+                 alt="бирка с надписью"
+                />
+                  </picture>
+              <p class="our-works__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reiciendis saepe esse, ea repudiandae architecto. Totam, possimus nihil et in pariatur praesentium rerum, quam cum, cupiditate modi voluptatibus aperiam a
               </p>
               </div>
-              <div class="portfolio-border">
-                <h2 class="portfolio-name">
+              <div class="our-works__border">
+                <h2 class="our-works__project">
                   Проєкт <span lang="en">LAB</span>
                 </h2>
-                <p class="porfolio-item">Маркетинг</p>
+                <p class="our-works__make">Маркетинг</p>
               </div> </a>
             </li>
-            <li class="our-works-item"> <a href="" class="link our-works-link">
-              <div class="about-background">
-                <img
-                class="our-work-img"
-                src="./image/portgolio/growing.jpg"
+            <li class="our-works__item"> <a href="" class="link our-works__link">
+              <div class="our-works__background">
+                <picture class="our-works__img">
+                    <source media="(max-width:767px)" srcset="./image/portfolio/optimization-mobile/mobile-growing.jpg 1x, ./image/portfolio/optimization-mobile/mobile-growing@2x.jpg 2x, ./image/portfolio/optimization-mobile/mobile-growing@3x.jpg 3x " />
+                    <source media="(min-width:1200px)" srcset="./image/portfolio/optimization-desctop/desctop-growing.jpg 1x, ./image/portfolio/optimization-desctop/desctop-growing@2x.jpg 2x, ./image/portfolio/optimization-desctop/desctop-growing@3x.jpg 3x " />
+                    <source media="(min-width:768px)" srcset="./image/portfolio/optimization-tablet/tablet-growing.jpg 1x, ./image/portfolio/optimization-tablet/tablet-growing@2x.jpg 2x, ./image/portfolio/optimization-tablet/tablet-growing@3x.jpg 3x " />
+                    <img
+                  src="./image/portfolio/optimization-mobile/mobile-growing.jpg"
                 alt="ноутбук в роботе"
-                width="370"
-              />
-              <p class="our-work-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reiciendis saepe esse, ea repudiandae architecto. Totam, possimus nihil et in pariatur praesentium rerum, quam cum, cupiditate modi voluptatibus aperiam </p>
+                />
+                  </picture>
+              <p class="our-works__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reiciendis saepe esse, ea repudiandae architecto. Totam, possimus nihil et in pariatur praesentium rerum, quam cum, cupiditate modi voluptatibus aperiam </p>
               </div>
-              <div class="portfolio-border">
-                <h2 lang="en" class="portfolio-name">Growing Business</h2>
-                <p class="porfolio-item">Додаток</p>
+              <div class="our-works__border">
+                <h2 lang="en" class="our-works__project">Growing Business</h2>
+                <p class="our-works__make">Додаток</p>
               </div>
             </li>
           </ul>
