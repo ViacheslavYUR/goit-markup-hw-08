@@ -118,6 +118,7 @@ button {
   left: 0;
   z-index: 110;
   background-color: var(--primery-bgc);
+  overflow-y: hidden;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -147,6 +148,9 @@ button {
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 25px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .mobile-menu_close {
@@ -222,11 +226,14 @@ button {
 }
 
 .contact {
-  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: 64px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .contact {
-    margin-bottom: 64px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -235,18 +242,37 @@ button {
   }
 }
 
-.contact__mail,
+@media screen and (max-width: 767px) {
+  .contact__item + .contact__item {
+    margin-top: 32px;
+  }
+}
 .contact__phone {
-  display: flex;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--primery-text-color);
-  align-items: center;
-  transition-property: color, fill;
-  transition-duration: var(--transform-durac);
-  transition-timing-function: var(--transition-func);
+  font-size: 34px;
+  line-height: 1.1764705882;
+  color: var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .contact__phone {
+    padding-bottom: 21px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact__mail,
+.contact__phone {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primery-text-color);
+    align-items: center;
+    transition-property: color, fill;
+    transition-duration: var(--transform-durac);
+    transition-timing-function: var(--transition-func);
+  }
 }
 @media screen and (min-width: 1200px) {
   .contact__mail,
@@ -270,7 +296,7 @@ button {
     color: var(--primery-text-color);
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact__mail {
     padding-top: 21px;
     margin-bottom: 10px;
@@ -279,18 +305,6 @@ button {
 @media screen and (min-width: 1200px) {
   .contact__mail {
     margin-right: 50px;
-  }
-}
-
-.contact__phone {
-  padding-bottom: 21px;
-}
-@media screen and (max-width: 767px) {
-  .contact__phone {
-    font-size: 34px;
-    line-height: 1.1764705882;
-    color: var(--accent-color);
-    margin-bottom: 32px;
   }
 }
 
@@ -1118,11 +1132,16 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
+  width: 100%;
   padding: 40px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {

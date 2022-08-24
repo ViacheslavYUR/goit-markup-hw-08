@@ -6,6 +6,7 @@
   left: 0;
   z-index: 110;
   background-color: var(--primery-bgc);
+  overflow-y: hidden;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -34,6 +35,9 @@
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 25px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 .mobile-menu_close {
   position: absolute;
