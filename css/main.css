@@ -178,6 +178,33 @@ button {
     letter-spacing: 0.02em;
   }
 }
+.mobile-social {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.mobile-social__item:not(:first-child) {
+  margin-left: 10px;
+}
+.mobile-social__item:not(:last-child)::after {
+  content: " ";
+  display: inline-block;
+  height: 22px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  margin-left: 10px;
+}
+
+.mobile-social__link {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  padding: 0;
+}
+
 @media screen and (max-width: 767px) {
   .navigation,
 .page-header__container .contact {
@@ -197,28 +224,15 @@ button {
 .contact {
   margin-left: auto;
 }
+@media screen and (max-width: 767px) {
+  .contact {
+    margin-bottom: 64px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .contact {
     display: flex;
   }
-}
-
-.contact__mail {
-  padding-top: 21px;
-}
-@media screen and (max-width: 1199px) {
-  .contact__mail {
-    margin-bottom: 10px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .contact__mail {
-    margin-right: 50px;
-  }
-}
-
-.contact__phone {
-  padding-bottom: 21px;
 }
 
 .contact__mail,
@@ -248,13 +262,51 @@ button {
   color: var(--accent-color);
 }
 
-.contact__icon {
-  fill: currentColor;
+@media screen and (max-width: 767px) {
+  .contact__mail {
+    font-size: 24px;
+    line-height: 1.1666666667;
+    letter-spacing: 0.02em;
+    color: var(--primery-text-color);
+  }
 }
-.contact__mail .contact__icon, .contact__phone .contact__icon {
-  margin-right: 8px;
+@media screen and (max-width: 1199px) {
+  .contact__mail {
+    padding-top: 21px;
+    margin-bottom: 10px;
+  }
 }
 @media screen and (min-width: 1200px) {
+  .contact__mail {
+    margin-right: 50px;
+  }
+}
+
+.contact__phone {
+  padding-bottom: 21px;
+}
+@media screen and (max-width: 767px) {
+  .contact__phone {
+    font-size: 34px;
+    line-height: 1.1764705882;
+    color: var(--accent-color);
+    margin-bottom: 32px;
+  }
+}
+
+.contact__icon {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .contact__icon {
+    display: inline-block;
+    fill: currentColor;
+  }
+  .contact__mail .contact__icon, .contact__phone .contact__icon {
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .contact__mail .contact__icon, .contact__phone .contact__icon {
     margin-right: 10px;
   }

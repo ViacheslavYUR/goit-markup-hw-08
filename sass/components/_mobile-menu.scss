@@ -64,3 +64,33 @@
     letter-spacing: 0.02em;
   }
 }
+
+.mobile-social {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.mobile-social__item {
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+  &:not(:last-child) {
+    &::after {
+      content: " ";
+      display: inline-block;
+      height: 22px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      margin-left: 10px;
+    }
+  }
+}
+
+.mobile-social__link {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(22px / 18px);
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  padding: 0;
+}
