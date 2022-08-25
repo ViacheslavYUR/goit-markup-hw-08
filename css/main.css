@@ -186,11 +186,9 @@ button {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  gap: 10px;
 }
 
-.mobile-social__item:not(:first-child) {
-  margin-left: 10px;
-}
 .mobile-social__item:not(:last-child)::after {
   content: " ";
   display: inline-block;
