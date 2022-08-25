@@ -223,6 +223,105 @@ button {
   justify-content: space-between;
 }
 
+@media screen and (min-width: 768px) {
+  .nav-menu {
+    display: flex;
+  }
+}
+
+.nav-menu__item {
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  .nav-menu__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+.nav-menu__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-menu__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color;
+  transition-duration: var(--transform-durac);
+  transition-timing-function: var(--transition-func);
+}
+@media screen and (max-width: 767px) {
+  .nav-menu__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
+    text-align: center;
+    letter-spacing: 0.02em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+.nav-menu__link:hover, .nav-menu__link:focus {
+  color: var(--accent-color);
+}
+
+.nav-menu__link_active {
+  position: relative;
+  color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .nav-menu__link_active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    display: block;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+  }
+}
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.logo_position {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .logo_position {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-right: 87px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo_position {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+  }
+}
+
+.logo_theme-light {
+  color: #000000;
+}
+
+.logo_theme-dark {
+  color: var(--text-color-dark-terms);
+}
+
 .contact {
   margin-top: auto;
   margin-bottom: 64px;
@@ -322,105 +421,6 @@ button {
   .contact__mail .contact__icon, .contact__phone .contact__icon {
     margin-right: 10px;
   }
-}
-
-@media screen and (min-width: 768px) {
-  .nav-menu {
-    display: flex;
-  }
-}
-
-.nav-menu__item {
-  position: relative;
-}
-@media screen and (max-width: 767px) {
-  .nav-menu__item:not(:last-child) {
-    margin-bottom: 32px;
-  }
-}
-.nav-menu__item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.nav-menu__link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
-  transition: color;
-  transition-duration: var(--transform-durac);
-  transition-timing-function: var(--transition-func);
-}
-@media screen and (max-width: 767px) {
-  .nav-menu__link {
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 1.175;
-    text-align: center;
-    letter-spacing: 0.02em;
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-}
-.nav-menu__link:hover, .nav-menu__link:focus {
-  color: var(--accent-color);
-}
-
-.nav-menu__link_active {
-  position: relative;
-  color: var(--accent-color);
-}
-
-@media screen and (min-width: 768px) {
-  .nav-menu__link_active::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 4px;
-    display: block;
-    background-color: var(--accent-color);
-    border-radius: 2px;
-  }
-}
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-}
-
-.logo_position {
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-@media screen and (min-width: 768px) {
-  .logo_position {
-    padding-top: 26px;
-    padding-bottom: 26px;
-    margin-right: 87px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .logo_position {
-    padding-top: 24px;
-    padding-bottom: 25px;
-    margin-right: 93px;
-  }
-}
-
-.logo_theme-light {
-  color: #000000;
-}
-
-.logo_theme-dark {
-  color: var(--text-color-dark-terms);
 }
 
 .hero {
@@ -681,36 +681,47 @@ button {
   margin-bottom: 16px;
 }
 
-.employees-social {
+.social {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
 
-.employee-social__link {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+.social__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff;
-  fill: var(--icon-color);
-  transition-property: fill, background-color, bordrer-radius;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition-property: background-color;
   transition-duration: var(--transform-durac);
   transition-timing-function: var(--transition-func);
 }
-.employee-social__link:hover, .employee-social__link:focus {
+.social__link_employee-theme {
+  background-color: transparent;
+  fill: var(--icon-color);
+  transition-property: fill, background-color;
+}
+.social__link_employee-theme:hover, .social__link_employee-theme:focus {
   fill: var(--text-color-dark-terms);
   background-color: var(--accent-color);
-  border-radius: 50%;
+}
+.social__link_footer-theme {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.social__link_footer-theme:hover, .social__link_footer-theme:focus {
+  background-color: var(--accent-color);
 }
 
-.employee-social__icon {
+.social__icon {
   display: flex;
   width: 20px;
   height: 20px;
+}
+.social__icon_theme-dark {
+  fill: var(--text-color-dark-terms);
 }
 
 .client {
@@ -950,35 +961,6 @@ button {
 
 .address__contact {
   color: rgba(255, 255, 255, 0.6);
-}
-
-.social-list {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.social-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  transition-property: background-color;
-  transition-duration: var(--transform-durac);
-  transition-timing-function: var(--transition-func);
-}
-.social-link:hover, .social-link:focus {
-  background-color: var(--accent-color);
-}
-
-.social-footer-icon {
-  display: block;
-  width: 20px;
-  height: 20px;
-  fill: var(--text-color-dark-terms);
 }
 
 .menu-filter {
