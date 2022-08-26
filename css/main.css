@@ -66,6 +66,12 @@ button {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .section__title {
   font-weight: 700;
@@ -519,12 +525,17 @@ button {
   .advantage {
     display: flex;
     flex-wrap: wrap;
-    gap: 57px 30px;
+    gap: 30px;
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .advantage {
     flex-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantage__item {
+    max-width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1224,6 +1235,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
