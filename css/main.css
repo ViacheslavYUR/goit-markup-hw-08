@@ -1097,10 +1097,6 @@ button {
   transform: scale(0);
 }
 
-.backdrop {
-  padding: 1vh 1vw;
-}
-
 .modal {
   position: absolute;
   top: 50%;
