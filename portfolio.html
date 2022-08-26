@@ -15,11 +15,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--хедер-->
-          <header class="page-header">
+    <header class="page-header">
       <div class="container page-header__container">
         <a href="./index.html" lang="en" class="logo logo_position link"
           >Web<span class="logo_theme-light">Studio</span>
@@ -32,14 +32,12 @@
         <nav class="navigation">
           <ul class="nav-menu list">
             <li class="nav-menu__item">
-              <a
-                href="./index.html"
-                class="nav-menu__link link"
-                >Студія</a
-              >
+              <a href="./index.html" class="nav-menu__link link">Студія</a>
             </li>
             <li class="nav-menu__item">
-              <a href="./portfolio.html" class="nav-menu__link nav-menu__link_active link"
+              <a
+                href="./portfolio.html"
+                class="nav-menu__link nav-menu__link_active link"
                 >Портфоліо</a
               >
             </li>
@@ -76,14 +74,12 @@
           <nav class="navigation">
             <ul class="nav-menu list">
               <li class="nav-menu__item">
-                <a
-                  href="./index.html"
-                  class="nav-menu__link link"
-                  >Студія</a
-                >
+                <a href="./index.html" class="nav-menu__link link">Студія</a>
               </li>
               <li class="nav-menu__item">
-                <a href="./portfolio.html" class="nav-menu__link nav-menu__link_active link"
+                <a
+                  href="./portfolio.html"
+                  class="nav-menu__link nav-menu__link_active link"
                   >Портфоліо</a
                 >
               </li>
@@ -94,31 +90,35 @@
           </nav>
           <ul class="contact list">
             <li class="contact__item">
-            <a href="tel:+380961111111" class="contact__phone link">
-              <svg class="contact__icon" width="10" height="16">
-                <use href="./image/icon/sprites.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-          <li class="contact__item">
-            <a href="mailto:info@devstudio.com" class="contact__mail link">
-              <svg class="contact__icon" width="16" height="12">
-                <use href="./image/icon/sprites.svg#icon-envelope"></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-        </ul>
-        <ul class="mobile-social list">
-          <li class="mobile-social__item">
-            <a href="" class="mobile-social__link link">Instagram</a></li>
-          <li class="mobile-social__item">
-            <a href="" class="mobile-social__link link">Twitter</a></li>
-          <li class="mobile-social__item">
-            <a href="" class="mobile-social__link link">Facebook</a></li>
-          <li class="mobile-social__item">
-            <a href="" class="mobile-social__link link">LinkedIn</a></li>
-        </ul>
+              <a href="tel:+380961111111" class="contact__phone link">
+                <svg class="contact__icon" width="10" height="16">
+                  <use href="./image/icon/sprites.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="contact__item">
+              <a href="mailto:info@devstudio.com" class="contact__mail link">
+                <svg class="contact__icon" width="16" height="12">
+                  <use href="./image/icon/sprites.svg#icon-envelope"></use></svg
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-social list">
+            <li class="mobile-social__item">
+              <a href="" class="mobile-social__link link">Instagram</a>
+            </li>
+            <li class="mobile-social__item">
+              <a href="" class="mobile-social__link link">Twitter</a>
+            </li>
+            <li class="mobile-social__item">
+              <a href="" class="mobile-social__link link">Facebook</a>
+            </li>
+            <li class="mobile-social__item">
+              <a href="" class="mobile-social__link link">LinkedIn</a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -128,11 +128,21 @@
           <h1 class="hidden-title">----Hidden-----Наше Портфолио</h1>
           <!--список фильтров-->
           <ul class="menu-filter list">
-            <li class="menu-filter__item"><button type="button" class="btn-filter">Все</button></li>
-            <li class="menu-filter__item"><button type="button" class="btn-filter">Веб-сайти</button></li>
-            <li class="menu-filter__item"><button type="button" class="btn-filter">Додатки</button></li>
-            <li class="menu-filter__item"><button type="button" class="btn-filter">Дизайн</button></li>
-            <li class="menu-filter__item"><button type="button" class="btn-filter">Маркетинг</button></li>
+            <li class="menu-filter__item">
+              <button type="button" class="btn-filter">Все</button>
+            </li>
+            <li class="menu-filter__item">
+              <button type="button" class="btn-filter">Веб-сайти</button>
+            </li>
+            <li class="menu-filter__item">
+              <button type="button" class="btn-filter">Додатки</button>
+            </li>
+            <li class="menu-filter__item">
+              <button type="button" class="btn-filter">Дизайн</button>
+            </li>
+            <li class="menu-filter__item">
+              <button type="button" class="btn-filter">Маркетинг</button>
+            </li>
           </ul>
           <!-- перечень работ портфолио -->
           <ul class="list our-works">
@@ -140,17 +150,41 @@
               <a href="" class="link our-works__link">
                 <div class="our-works__background">
                   <picture class="our-works__img">
-                    <source media="(max-width:767px)" srcset="./image/portfolio/optimization-mobile/mobile-tehnocrack.jpg 1x, ./image/portfolio/optimization-mobile/mobile-tehnocrack@2x.jpg 2x, ./image/portfolio/optimization-mobile/mobile-tehnocrack@3x.jpg 3x " />
-                    <source media="(min-width:1200px)" srcset="./image/portfolio/optimization-desctop/desctop-tehnocrack.jpg 1x, ./image/portfolio/optimization-desctop/desctop-tehnocrack@2x.jpg 2x, ./image/portfolio/optimization-desctop/desctop-tehnocrack@3x.jpg 3x " />
-                    <source media="(min-width:768px)" srcset="./image/portfolio/optimization-tablet/tablet-tehnocrack.jpg 1x, ./image/portfolio/optimization-tablet/tablet-tehnocrack@2x.jpg 2x, ./image/portfolio/optimization-tablet/tablet-tehnocrack@3x.jpg 3x " />
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./image/portfolio/optimization-mobile/mobile-tehnocrack.jpg    1x,
+                        ./image/portfolio/optimization-mobile/mobile-tehnocrack@2x.jpg 2x,
+                        ./image/portfolio/optimization-mobile/mobile-tehnocrack@3x.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./image/portfolio/optimization-desctop/desctop-tehnocrack.jpg    1x,
+                        ./image/portfolio/optimization-desctop/desctop-tehnocrack@2x.jpg 2x,
+                        ./image/portfolio/optimization-desctop/desctop-tehnocrack@3x.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./image/portfolio/optimization-tablet/tablet-tehnocrack.jpg    1x,
+                        ./image/portfolio/optimization-tablet/tablet-tehnocrack@2x.jpg 2x,
+                        ./image/portfolio/optimization-tablet/tablet-tehnocrack@3x.jpg 3x
+                      "
+                    />
                     <img
-                  src="./image/portfolio/optimization-mobile/mobile-tehnocrack.jpg"
-                  alt="Технокряк"
-
-                />
+                      src="./image/portfolio/optimization-mobile/mobile-tehnocrack.jpg"
+                      alt="Технокряк"
+                    />
                   </picture>
-                 <p class="our-works__about">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу</p>
-              </div>
+                  <p class="our-works__about">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу
+                  </p>
+                </div>
                 <div class="our-works__border">
                   <h2 class="our-works__project">Технокряк</h2>
                   <p class="our-works__make">Веб-сайт</p>
@@ -159,20 +193,42 @@
             </li>
             <li class="our-works__item">
               <a href="" class="link our-works__link">
-                <div class="our-works__background"> 
+                <div class="our-works__background">
                   <picture class="our-works__img">
-                    <source media="(max-width:767px)" srcset="./image/portfolio/optimization-mobile/mobile-post-basketbal.jpg 1x, ./image/portfolio/optimization-mobile/mobile-post-basketbal@2x.jpg 2x, ./image/portfolio/optimization-mobile/mobile-post-basketbal@3x.jpg 3x " />
-                    <source media="(min-width:1200px)" srcset="./image/portfolio/optimization-desctop/desctop-post-basketbal.jpg 1x, ./image/portfolio/optimization-desctop/desctop-post-basketbal@2x.jpg 2x, ./image/portfolio/optimization-desctop/desctop-post-basketbal@3x.jpg 3x " />
-                    <source media="(min-width:768px)" srcset="./image/portfolio/optimization-tablet/tablet-post-basketbal.jpg 1x, ./image/portfolio/optimization-tablet/tablet-post-basketbal@2x.jpg 2x, ./image/portfolio/optimization-tablet/tablet-post-basketbal@3x.jpg 3x " />
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./image/portfolio/optimization-mobile/mobile-post-basketbal.jpg    1x,
+                        ./image/portfolio/optimization-mobile/mobile-post-basketbal@2x.jpg 2x,
+                        ./image/portfolio/optimization-mobile/mobile-post-basketbal@3x.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./image/portfolio/optimization-desctop/desctop-post-basketbal.jpg    1x,
+                        ./image/portfolio/optimization-desctop/desctop-post-basketbal@2x.jpg 2x,
+                        ./image/portfolio/optimization-desctop/desctop-post-basketbal@3x.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./image/portfolio/optimization-tablet/tablet-post-basketbal.jpg    1x,
+                        ./image/portfolio/optimization-tablet/tablet-post-basketbal@2x.jpg 2x,
+                        ./image/portfolio/optimization-tablet/tablet-post-basketbal@3x.jpg 3x
+                      "
+                    />
                     <img
-                    src="./image/portfolio/optimization-mobile/mobile-post-basketbal.jpg"
-                  alt="два баскетболиста"
-
-                />
-                  </picture>                  
-                 <p class="our-works__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reiciendis saepe esse, ea repudiandae architecto.
-                 </p>
-              </div>
+                      src="./image/portfolio/optimization-mobile/mobile-post-basketbal.jpg"
+                      alt="два баскетболиста"
+                    />
+                  </picture>
+                  <p class="our-works__about">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis reiciendis saepe esse, ea repudiandae architecto.
+                  </p>
+                </div>
                 <div class="our-works__border">
                   <h2 class="our-works__project">
                     Постер <span lang="en">New Orlean vs Golden Star</span>
@@ -183,20 +239,42 @@
             </li>
             <li class="our-works__item">
               <a href="" class="link our-works__link">
-                <div class="our-works__background"> 
+                <div class="our-works__background">
                   <picture class="our-works__img">
-                    <source media="(max-width:767px)" srcset="./image/portfolio/optimization-mobile/mobile-restaurant.jpg 1x, ./image/portfolio/optimization-mobile/mobile-restaurant@2x.jpg 2x, ./image/portfolio/optimization-mobile/mobile-restaurant@3x.jpg 3x " />
-                    <source media="(min-width:1200px)" srcset="./image/portfolio/optimization-desctop/desctop-restaurant.jpg 1x, ./image/portfolio/optimization-desctop/desctop-restaurant@2x.jpg 2x, ./image/portfolio/optimization-desctop/desctop-restaurant@3x.jpg 3x " />
-                    <source media="(min-width:768px)" srcset="./image/portfolio/optimization-tablet/tablet-restaurant.jpg 1x, ./image/portfolio/optimization-tablet/tablet-restaurant@2x.jpg 2x, ./image/portfolio/optimization-tablet/tablet-restaurant@3x.jpg 3x " />
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./image/portfolio/optimization-mobile/mobile-restaurant.jpg    1x,
+                        ./image/portfolio/optimization-mobile/mobile-restaurant@2x.jpg 2x,
+                        ./image/portfolio/optimization-mobile/mobile-restaurant@3x.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./image/portfolio/optimization-desctop/desctop-restaurant.jpg    1x,
+                        ./image/portfolio/optimization-desctop/desctop-restaurant@2x.jpg 2x,
+                        ./image/portfolio/optimization-desctop/desctop-restaurant@3x.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./image/portfolio/optimization-tablet/tablet-restaurant.jpg    1x,
+                        ./image/portfolio/optimization-tablet/tablet-restaurant@2x.jpg 2x,
+                        ./image/portfolio/optimization-tablet/tablet-restaurant@3x.jpg 3x
+                      "
+                    />
                     <img
-                  src="./image/portfolio/optimization-mobile/mobile-restaurant.jpg"
-                  alt="логотип ресторана"
-
-                />
-                  </picture>                  
-                  <p class="our-works__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reiciendis saepe esse, ea repudiandae architecto.
+                      src="./image/portfolio/optimization-mobile/mobile-restaurant.jpg"
+                      alt="логотип ресторана"
+                    />
+                  </picture>
+                  <p class="our-works__about">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis reiciendis saepe esse, ea repudiandae architecto.
                   </p>
-              </div>
+                </div>
                 <div class="our-works__border">
                   <h2 class="our-works__project">
                     Ресторан <span lang="en">Seafood</span>
@@ -207,20 +285,44 @@
             </li>
             <li class="our-works__item">
               <a href="" class="link our-works__link">
-                <div class="our-works__background"> 
+                <div class="our-works__background">
                   <picture class="our-works__img">
-                    <source media="(max-width:767px)" srcset="./image/portfolio/optimization-mobile/mobile-prime.jpg 1x, ./image/portfolio/optimization-mobile/mobile-prime@2x.jpg 2x, ./image/portfolio/optimization-mobile/mobile-prime@3x.jpg 3x " />
-                    <source media="(min-width:1200px)" srcset="./image/portfolio/optimization-desctop/desctop-prime.jpg 1x, ./image/portfolio/optimization-desctop/desctop-prime@2x.jpg 2x, ./image/portfolio/optimization-desctop/desctop-prime@3x.jpg 3x " />
-                    <source media="(min-width:768px)" srcset="./image/portfolio/optimization-tablet/tablet-prime.jpg 1x, ./image/portfolio/optimization-tablet/tablet-prime@2x.jpg 2x, ./image/portfolio/optimization-tablet/tablet-prime@3x.jpg 3x " />
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./image/portfolio/optimization-mobile/mobile-prime.jpg    1x,
+                        ./image/portfolio/optimization-mobile/mobile-prime@2x.jpg 2x,
+                        ./image/portfolio/optimization-mobile/mobile-prime@3x.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./image/portfolio/optimization-desctop/desctop-prime.jpg    1x,
+                        ./image/portfolio/optimization-desctop/desctop-prime@2x.jpg 2x,
+                        ./image/portfolio/optimization-desctop/desctop-prime@3x.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./image/portfolio/optimization-tablet/tablet-prime.jpg    1x,
+                        ./image/portfolio/optimization-tablet/tablet-prime@2x.jpg 2x,
+                        ./image/portfolio/optimization-tablet/tablet-prime@3x.jpg 3x
+                      "
+                    />
                     <img
-                  src="./image/portfolio/optimization-mobile/mobile-prime.jpg"
-                   alt="навушники"
-
-                />
+                      src="./image/portfolio/optimization-mobile/mobile-prime.jpg"
+                      alt="навушники"
+                    />
                   </picture>
-                 <p class="our-works__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reiciendis saepe esse, ea repudiandae architecto. Totam, possimus nihil et in pariatur praesentium rerum, quam cum, cupiditate modi voluptatibus aperiam a
-                 </p>
-              </div>
+                  <p class="our-works__about">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis reiciendis saepe esse, ea repudiandae architecto.
+                    Totam, possimus nihil et in pariatur praesentium rerum, quam
+                    cum, cupiditate modi voluptatibus aperiam a
+                  </p>
+                </div>
                 <div class="our-works__border">
                   <h2 class="our-works__project">
                     Проєкт <span lang="en">Prime</span>
@@ -229,181 +331,335 @@
                 </div>
               </a>
             </li>
-            <li class="our-works__item"> <a href="" class="link our-works__link">
-              <div class="our-works__background"> 
-                <picture class="our-works__img">
-                    <source media="(max-width:767px)" srcset="./image/portfolio/optimization-mobile/mobile-boxes.jpg 1x, ./image/portfolio/optimization-mobile/mobile-boxes@2x.jpg 2x, ./image/portfolio/optimization-mobile/mobile-boxes@3x.jpg 3x " />
-                    <source media="(min-width:1200px)" srcset="./image/portfolio/optimization-desctop/desctop-boxes.jpg 1x, ./image/portfolio/optimization-desctop/desctop-boxes@2x.jpg 2x, ./image/portfolio/optimization-desctop/desctop-boxes@3x.jpg 3x " />
-                    <source media="(min-width:768px)" srcset="./image/portfolio/optimization-tablet/tablet-boxes.jpg 1x, ./image/portfolio/optimization-tablet/tablet-boxes@2x.jpg 2x, ./image/portfolio/optimization-tablet/tablet-boxes@3x.jpg 3x " />
+            <li class="our-works__item">
+              <a href="" class="link our-works__link">
+                <div class="our-works__background">
+                  <picture class="our-works__img">
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./image/portfolio/optimization-mobile/mobile-boxes.jpg    1x,
+                        ./image/portfolio/optimization-mobile/mobile-boxes@2x.jpg 2x,
+                        ./image/portfolio/optimization-mobile/mobile-boxes@3x.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./image/portfolio/optimization-desctop/desctop-boxes.jpg    1x,
+                        ./image/portfolio/optimization-desctop/desctop-boxes@2x.jpg 2x,
+                        ./image/portfolio/optimization-desctop/desctop-boxes@3x.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./image/portfolio/optimization-tablet/tablet-boxes.jpg    1x,
+                        ./image/portfolio/optimization-tablet/tablet-boxes@2x.jpg 2x,
+                        ./image/portfolio/optimization-tablet/tablet-boxes@3x.jpg 3x
+                      "
+                    />
                     <img
-                  src="./image/portfolio/optimization-mobile/mobile-boxes.jpg"
-                  alt="две коробки"
-
-                />
+                      src="./image/portfolio/optimization-mobile/mobile-boxes.jpg"
+                      alt="две коробки"
+                    />
                   </picture>
-               <p class="our-works__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reiciendis saepe esse, ea repudiandae architecto. Totam, possimus nihil et in pariatur praesentium rerum, quam cum, cupiditate modi voluptatibus aperiam a
-              </p>
-              </div>
-              <div class="our-works__border">
-                <h2 class="our-works__project">
-                  Проєкт <span lang="en">Boxes</span>
-                </h2>
-                <p class="our-works__make">Додаток</p>
-              </div> </a>
+                  <p class="our-works__about">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis reiciendis saepe esse, ea repudiandae architecto.
+                    Totam, possimus nihil et in pariatur praesentium rerum, quam
+                    cum, cupiditate modi voluptatibus aperiam a
+                  </p>
+                </div>
+                <div class="our-works__border">
+                  <h2 class="our-works__project">
+                    Проєкт <span lang="en">Boxes</span>
+                  </h2>
+                  <p class="our-works__make">Додаток</p>
+                </div>
+              </a>
             </li>
-            <li class="our-works__item"> <a href="" class="link our-works__link">
-              <div class="our-works__background"> 
-                <picture class="our-works__img">
-                    <source media="(max-width:767px)" srcset="./image/portfolio/optimization-mobile/mobile-inspirarion.jpg 1x, ./image/portfolio/optimization-mobile/mobile-inspirarion@2x.jpg 2x, ./image/portfolio/optimization-mobile/mobile-inspirarion@3x.jpg 3x " />
-                    <source media="(min-width:1200px)" srcset="./image/portfolio/optimization-desctop/desctop-inspirarion.jpg 1x, ./image/portfolio/optimization-desctop/desctop-inspirarion@2x.jpg 2x, ./image/portfolio/optimization-desctop/desctop-inspirarion@3x.jpg 3x " />
-                    <source media="(min-width:768px)" srcset="./image/portfolio/optimization-tablet/tablet-inspirarion.jpg 1x, ./image/portfolio/optimization-tablet/tablet-inspirarion@2x.jpg 2x, ./image/portfolio/optimization-tablet/tablet-inspirarion@3x.jpg 3x " />
+            <li class="our-works__item">
+              <a href="" class="link our-works__link">
+                <div class="our-works__background">
+                  <picture class="our-works__img">
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./image/portfolio/optimization-mobile/mobile-inspirarion.jpg    1x,
+                        ./image/portfolio/optimization-mobile/mobile-inspirarion@2x.jpg 2x,
+                        ./image/portfolio/optimization-mobile/mobile-inspirarion@3x.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./image/portfolio/optimization-desctop/desctop-inspirarion.jpg    1x,
+                        ./image/portfolio/optimization-desctop/desctop-inspirarion@2x.jpg 2x,
+                        ./image/portfolio/optimization-desctop/desctop-inspirarion@3x.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./image/portfolio/optimization-tablet/tablet-inspirarion.jpg    1x,
+                        ./image/portfolio/optimization-tablet/tablet-inspirarion@2x.jpg 2x,
+                        ./image/portfolio/optimization-tablet/tablet-inspirarion@3x.jpg 3x
+                      "
+                    />
                     <img
-                  src="./image/portfolio/optimization-mobile/mobile-inspirarion.jpg"
-                  alt="монитор"
-                />
+                      src="./image/portfolio/optimization-mobile/mobile-inspirarion.jpg"
+                      alt="монитор"
+                    />
                   </picture>
-              <p class="our-works__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reiciendis saepe esse, ea repudiandae architecto. Totam, possimus nihil et in pariatur praesentium rerum, quam cum, cupiditate modi voluptatibus aperiam a
-              </p>
-              </div>
-              <div class="our-works__border">
-                <h2 lang="en" class="our-works__project">
-                  Inspiration has no Borders
-                </h2>
-                <p class="our-works__make">Веб-сайт</p>
-              </div> </a>
+                  <p class="our-works__about">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis reiciendis saepe esse, ea repudiandae architecto.
+                    Totam, possimus nihil et in pariatur praesentium rerum, quam
+                    cum, cupiditate modi voluptatibus aperiam a
+                  </p>
+                </div>
+                <div class="our-works__border">
+                  <h2 lang="en" class="our-works__project">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="our-works__make">Веб-сайт</p>
+                </div>
+              </a>
             </li>
-            <li class="our-works__item"> <a href="" class="link our-works__link">
-              <div class="our-works__background">
-                <picture class="our-works__img">
-                    <source media="(max-width:767px)" srcset="./image/portfolio/optimization-mobile/mobile-limited.jpg 1x, ./image/portfolio/optimization-mobile/mobile-limited@2x.jpg 2x, ./image/portfolio/optimization-mobile/mobile-limited@3x.jpg 3x " />
-                    <source media="(min-width:1200px)" srcset="./image/portfolio/optimization-desctop/desctop-limited.jpg 1x, ./image/portfolio/optimization-desctop/desctop-limited@2x.jpg 2x, ./image/portfolio/optimization-desctop/desctop-limited@3x.jpg 3x " />
-                    <source media="(min-width:768px)" srcset="./image/portfolio/optimization-tablet/tablet-limited.jpg 1x, ./image/portfolio/optimization-tablet/tablet-limited@2x.jpg 2x, ./image/portfolio/optimization-tablet/tablet-limited@3x.jpg 3x " />
+            <li class="our-works__item">
+              <a href="" class="link our-works__link">
+                <div class="our-works__background">
+                  <picture class="our-works__img">
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./image/portfolio/optimization-mobile/mobile-limited.jpg    1x,
+                        ./image/portfolio/optimization-mobile/mobile-limited@2x.jpg 2x,
+                        ./image/portfolio/optimization-mobile/mobile-limited@3x.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./image/portfolio/optimization-desctop/desctop-limited.jpg    1x,
+                        ./image/portfolio/optimization-desctop/desctop-limited@2x.jpg 2x,
+                        ./image/portfolio/optimization-desctop/desctop-limited@3x.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./image/portfolio/optimization-tablet/tablet-limited.jpg    1x,
+                        ./image/portfolio/optimization-tablet/tablet-limited@2x.jpg 2x,
+                        ./image/portfolio/optimization-tablet/tablet-limited@3x.jpg 3x
+                      "
+                    />
                     <img
-                  src="./image/portfolio/optimization-mobile/mobile-limited.jpg"
-                 alt="розкрытый журнал"
-                />
+                      src="./image/portfolio/optimization-mobile/mobile-limited.jpg"
+                      alt="розкрытый журнал"
+                    />
                   </picture>
-              <p class="our-works__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reiciendis saepe esse, ea repudiandae architecto. Totam, possimus nihil et in pariatur praesentium rerum, quam cum, cupiditate modi voluptatibus aperiam a
-              </p>
-              </div>
-              <div class="our-works__border">
-                <h2 class="our-works__project">
-                  Видання <span lang="en">Limited Edition</span>
-                </h2>
-                <p class="our-works__make">Дизайн</p>
-              </div> </a>
+                  <p class="our-works__about">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis reiciendis saepe esse, ea repudiandae architecto.
+                    Totam, possimus nihil et in pariatur praesentium rerum, quam
+                    cum, cupiditate modi voluptatibus aperiam a
+                  </p>
+                </div>
+                <div class="our-works__border">
+                  <h2 class="our-works__project">
+                    Видання <span lang="en">Limited Edition</span>
+                  </h2>
+                  <p class="our-works__make">Дизайн</p>
+                </div>
+              </a>
             </li>
-            <li class="our-works__item"> <a href="" class="link our-works__link">
-              <div class="our-works__background">
-                <picture class="our-works__img">
-                    <source media="(max-width:767px)" srcset="./image/portfolio/optimization-mobile/mobile-label.jpg 1x, ./image/portfolio/optimization-mobile/mobile-label@2x.jpg 2x, ./image/portfolio/optimization-mobile/mobile-label@3x.jpg 3x " />
-                    <source media="(min-width:1200px)" srcset="./image/portfolio/optimization-desctop/desctop-label.jpg 1x, ./image/portfolio/optimization-desctop/desctop-label@2x.jpg 2x, ./image/portfolio/optimization-desctop/desctop-label@3x.jpg 3x " />
-                    <source media="(min-width:768px)" srcset="./image/portfolio/optimization-tablet/tablet-label.jpg 1x, ./image/portfolio/optimization-tablet/tablet-label@2x.jpg 2x, ./image/portfolio/optimization-tablet/tablet-label@3x.jpg 3x " />
+            <li class="our-works__item">
+              <a href="" class="link our-works__link">
+                <div class="our-works__background">
+                  <picture class="our-works__img">
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./image/portfolio/optimization-mobile/mobile-label.jpg    1x,
+                        ./image/portfolio/optimization-mobile/mobile-label@2x.jpg 2x,
+                        ./image/portfolio/optimization-mobile/mobile-label@3x.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./image/portfolio/optimization-desctop/desctop-label.jpg    1x,
+                        ./image/portfolio/optimization-desctop/desctop-label@2x.jpg 2x,
+                        ./image/portfolio/optimization-desctop/desctop-label@3x.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./image/portfolio/optimization-tablet/tablet-label.jpg    1x,
+                        ./image/portfolio/optimization-tablet/tablet-label@2x.jpg 2x,
+                        ./image/portfolio/optimization-tablet/tablet-label@3x.jpg 3x
+                      "
+                    />
                     <img
-                  src="./image/portfolio/optimization-mobile/mobile-label.jpg"
-                 alt="бирка с надписью"
-                />
+                      src="./image/portfolio/optimization-mobile/mobile-label.jpg"
+                      alt="бирка с надписью"
+                    />
                   </picture>
-              <p class="our-works__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reiciendis saepe esse, ea repudiandae architecto. Totam, possimus nihil et in pariatur praesentium rerum, quam cum, cupiditate modi voluptatibus aperiam a
-              </p>
-              </div>
-              <div class="our-works__border">
-                <h2 class="our-works__project">
-                  Проєкт <span lang="en">LAB</span>
-                </h2>
-                <p class="our-works__make">Маркетинг</p>
-              </div> </a>
+                  <p class="our-works__about">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis reiciendis saepe esse, ea repudiandae architecto.
+                    Totam, possimus nihil et in pariatur praesentium rerum, quam
+                    cum, cupiditate modi voluptatibus aperiam a
+                  </p>
+                </div>
+                <div class="our-works__border">
+                  <h2 class="our-works__project">
+                    Проєкт <span lang="en">LAB</span>
+                  </h2>
+                  <p class="our-works__make">Маркетинг</p>
+                </div>
+              </a>
             </li>
-            <li class="our-works__item"> <a href="" class="link our-works__link">
-              <div class="our-works__background">
-                <picture class="our-works__img">
-                    <source media="(max-width:767px)" srcset="./image/portfolio/optimization-mobile/mobile-growing.jpg 1x, ./image/portfolio/optimization-mobile/mobile-growing@2x.jpg 2x, ./image/portfolio/optimization-mobile/mobile-growing@3x.jpg 3x " />
-                    <source media="(min-width:1200px)" srcset="./image/portfolio/optimization-desctop/desctop-growing.jpg 1x, ./image/portfolio/optimization-desctop/desctop-growing@2x.jpg 2x, ./image/portfolio/optimization-desctop/desctop-growing@3x.jpg 3x " />
-                    <source media="(min-width:768px)" srcset="./image/portfolio/optimization-tablet/tablet-growing.jpg 1x, ./image/portfolio/optimization-tablet/tablet-growing@2x.jpg 2x, ./image/portfolio/optimization-tablet/tablet-growing@3x.jpg 3x " />
+            <li class="our-works__item">
+              <a href="" class="link our-works__link">
+                <div class="our-works__background">
+                  <picture class="our-works__img">
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./image/portfolio/optimization-mobile/mobile-growing.jpg    1x,
+                        ./image/portfolio/optimization-mobile/mobile-growing@2x.jpg 2x,
+                        ./image/portfolio/optimization-mobile/mobile-growing@3x.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./image/portfolio/optimization-desctop/desctop-growing.jpg    1x,
+                        ./image/portfolio/optimization-desctop/desctop-growing@2x.jpg 2x,
+                        ./image/portfolio/optimization-desctop/desctop-growing@3x.jpg 3x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./image/portfolio/optimization-tablet/tablet-growing.jpg    1x,
+                        ./image/portfolio/optimization-tablet/tablet-growing@2x.jpg 2x,
+                        ./image/portfolio/optimization-tablet/tablet-growing@3x.jpg 3x
+                      "
+                    />
                     <img
-                  src="./image/portfolio/optimization-mobile/mobile-growing.jpg"
-                alt="ноутбук в роботе"
-                />
+                      src="./image/portfolio/optimization-mobile/mobile-growing.jpg"
+                      alt="ноутбук в роботе"
+                    />
                   </picture>
-              <p class="our-works__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reiciendis saepe esse, ea repudiandae architecto. Totam, possimus nihil et in pariatur praesentium rerum, quam cum, cupiditate modi voluptatibus aperiam </p>
-              </div>
-              <div class="our-works__border">
-                <h2 lang="en" class="our-works__project">Growing Business</h2>
-                <p class="our-works__make">Додаток</p>
-              </div>
+                  <p class="our-works__about">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis reiciendis saepe esse, ea repudiandae architecto.
+                    Totam, possimus nihil et in pariatur praesentium rerum, quam
+                    cum, cupiditate modi voluptatibus aperiam
+                  </p>
+                </div>
+                <div class="our-works__border">
+                  <h2 lang="en" class="our-works__project">Growing Business</h2>
+                  <p class="our-works__make">Додаток</p>
+                </div></a
+              >
             </li>
           </ul>
-   </a>      </div>
+        </div>
       </section>
     </main>
     <!-- Футер -->
-      <footer class="footer">
-    <div class="container footer__block">
-      <div class="footer__block_first">
-        <a href="./index.html" lang="en" class="logo footer__logo link">Web<span class="logo_theme-dark">Studio</span></a>
-        <address class="address">
-          <ul class="list">
-            <li class="address__item">
-              <a href="https://goo.gl/maps/Jku4d1xR5NEidK218" target="_blank" rel="noopener noreferrer"
-                title="Google maps" class="address__map link">м. Київ, пр-т Лесі Українки, 26</a>
+    <footer class="footer">
+      <div class="container footer__block">
+        <div class="footer__block_first">
+          <a href="./index.html" lang="en" class="logo footer__logo link"
+            >Web<span class="logo_theme-dark">Studio</span></a
+          >
+          <address class="address">
+            <ul class="list">
+              <li class="address__item">
+                <a
+                  href="https://goo.gl/maps/Jku4d1xR5NEidK218"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Google maps"
+                  class="address__map link"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="address__item">
+                <a href="mailto:info@example.com" class="address__contact link"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="address__item">
+                <a href="tel:+380991111111" class="address__contact link"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__block_second">
+          <p class="footer__subtitle">приєднуйтесь</p>
+          <ul class="social list">
+            <li class="social-item">
+              <a href="" class="social__link social__link_footer-theme">
+                <svg class="social__icon social__icon_theme-dark">
+                  <use href="./image/icon/sprites.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="address__item">
-              <a href="mailto:info@example.com" class="address__contact link">info@example.com</a>
+            <li class="social-item">
+              <a href="" class="social__link social__link_footer-theme">
+                <svg class="social__icon social__icon_theme-dark">
+                  <use href="./image/icon/sprites.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="address__item">
-              <a href="tel:+380991111111" class="address__contact link">+38 099 111 11 11</a>
+            <li class="social-item">
+              <a href="" class="social__link social__link_footer-theme">
+                <svg class="social__icon social__icon_theme-dark">
+                  <use href="./image/icon/sprites.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="" class="social__link social__link_footer-theme">
+                <svg class="social__icon social__icon_theme-dark">
+                  <use href="./image/icon/sprites.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
+        <div class="footer__block_third">
+          <p class="footer__subtitle">Підпишіться на розсилку</p>
+          <form class="subscribe-form">
+            <label for="subscribe-email" class="subscribe-write"
+              ><span class="subscribe-write-text">E-mail</span>
+              <input
+                type="email"
+                name="email"
+                id="subscribe-email"
+                class="subscribe-add-mail"
+              />
+            </label>
+            <button type="submit" class="subscribe-btn">
+              Підписатися
+              <svg class="subsribe-btn-icon">
+                <use href="./image/icon/sprites.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
-      <div class="footer__block_second">
-        <p class="footer__subtitle">приєднуйтесь</p>
-        <ul class="social list">
-          <li class="social-item">
-            <a href="" class="social__link social__link_footer-theme">
-              <svg class="social__icon social__icon_theme-dark">
-                <use href="./image/icon/sprites.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="" class="social__link social__link_footer-theme">
-              <svg class="social__icon social__icon_theme-dark">
-                <use href="./image/icon/sprites.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="" class="social__link social__link_footer-theme">
-              <svg class="social__icon social__icon_theme-dark">
-                <use href="./image/icon/sprites.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="" class="social__link social__link_footer-theme">
-              <svg class="social__icon social__icon_theme-dark">
-                <use href="./image/icon/sprites.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__block_third">
-        <p class="footer__subtitle">Підпишіться на розсилку</p>
-        <form class="subscribe-form">
-          <label for="subscribe-email" class="subscribe-write"><span class="subscribe-write-text">E-mail</span>
-            <input type="email" name="email" id="subscribe-email" class="subscribe-add-mail">
-          </label>
-          <button type="submit" class="subscribe-btn">Підписатися
-            <svg class="subsribe-btn-icon">
-              <use href="./image/icon/sprites.svg#icon-send"></use>
-            </svg>
-          </button>
-        </form>
-      </div>
-    </div>
-  </footer>
-      <script src="./js/mobile-menu.js"></script>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
