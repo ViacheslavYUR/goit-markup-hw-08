@@ -45,6 +45,7 @@
   gap: 30px;
 }
 .our-works__border {
+  flex-grow: 1;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
@@ -55,8 +56,9 @@
   border-bottom: 1px solid #eeeeee;
 }
 .our-works__link {
-  display: inline-block;
-  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow var(--transform-durac) var(--transition-func);
   &:hover,
   &:focus {
