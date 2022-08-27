@@ -521,31 +521,20 @@ button {
   background-color: #188ce8;
 }
 
-@media screen and (min-width: 768px) {
-  .advantage {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
+.advantage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .advantage {
     flex-wrap: nowrap;
   }
 }
+
 @media screen and (min-width: 768px) {
   .advantage__item {
     max-width: 354px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .advantage__item:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .advantage__item:not(:last-child) {
-    margin-bottom: 30px;
   }
 }
 

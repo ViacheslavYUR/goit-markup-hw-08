@@ -1,29 +1,16 @@
-// .advantage {
-//   max-width: 480px;
-// }
+.advantage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 
-@media screen and(min-width:768px) {
-  .advantage {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-
-    @media screen and(min-width:1200px) {
-      flex-wrap: nowrap;
-    }
+  @media screen and(min-width:1200px) {
+    flex-wrap: nowrap;
   }
 }
+
 .advantage__item {
   @media screen and(min-width:768px) {
     max-width: 354px;
-  }
-  &:not(:last-child) {
-    @media screen and(min-width:1200px) {
-      margin-right: 30px;
-    }
-    @media screen and(max-width:767px) {
-      margin-bottom: 30px;
-    }
   }
 }
 .advantage__title {
